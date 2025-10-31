@@ -221,6 +221,40 @@ li:hover {
     }
 }
 
+/* 🌞 Tema Claro */
+body.claro {
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+/* 🌙 Tema Escuro */
+body.escuro {
+    background-color: #121212;
+    color: #f2f2f2;
+}
+
+/* 🎨 Estilo do título */
+h1 {
+    transition: color 0.4s;
+}
+
+/* 🔘 Botão */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
 /* Smartphones (480px ou menos) */
 @media (max-width: 480px) {
     header h1 {
@@ -312,4 +346,42 @@ li:hover {
     .about {
         font-size: 0.8rem;
     }
+}
+
+/* ========================================
+   Centralização e estilo do toggle de tema
+   ======================================== */
+.theme-toggle{
+    width: 100%;
+    max-width: 600px;
+    margin: 18px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    padding: 8px 12px;
+}
+
+.theme-toggle #titulo{
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.theme-note{
+    margin: 0;
+    color: inherit;
+    opacity: 0.9;
+}
+
+/* Ajustes para o profile-card no tema escuro */
+body.escuro .profile-card{
+    background: rgba(255,255,255,0.04);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+body.escuro .profile-name,
+body.escuro .about,
+body.escuro .profile-buttons li a{
+    color: #e6eef8;
 }

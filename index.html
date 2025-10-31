@@ -6,7 +6,7 @@
         <title>Página de Apresentação Pessoal</title>
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body>
+    <body class="claro">
         <header>
             <h1>Atividade: Dom JS</h1>
         </header>
@@ -35,13 +35,16 @@
                     Estou constantemente explorando o universo do desenvolvimento front-end e buscando desafios que me façam crescer como profissional.
                 </p>
             </div>
+            </div>
         </div>
 
-        <main>
-            <section id="sobre">
-                <h3 id="titulo-sobre">Sobre Mim</h3>
-                <p>Sou um desenvolvedor apaixonado por tecnologia e inovação.</p>
-            </section>
-        </main>
+        <!-- Botão de alternância do tema (abaixo do container principal) -->
+        <div class="theme-toggle">
+            <h2 id="titulo">Modo Claro 🌞</h2>
+            <p class="theme-note">Experimente alternar entre o modo claro e escuro usando o botão abaixo.</p>
+            <button id="botao">Ativar modo escuro 🌙</button>
+        </div>
+
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
