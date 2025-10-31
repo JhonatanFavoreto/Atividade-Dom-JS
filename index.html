@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Apresentação Pessoal com Modo Escuro</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Página de Apresentação Pessoal</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Atividade: Dom JS</h1>
+        </header>
 
-<header>
-    <h1>Atividade: Dom JS</h1>
-</header>
+        <div class="dark-mode">
+            <h2>Esta é uma página de apresentação pessoal com um tema escuro.</h2>
+        </div>
 
-<section>
-    <img src="./assets/img/foto.jpg" alt="Foto de Jhonatan Henrique Favoreto" width="200" height="200">
-    <h2>Esta é uma página de apresentação pessoal com um tema escuro.</h2>
-    <p>Eu sou Jhonatan Henrique Favoreto, e esta é a minha apresentação pessoal.</p>
-</section>
+        <div class="container">
+            <div class="profile-card">
+                <img src="assets/img/foto.jpg" alt="Minha Foto" />
+                <h2 class="profile-name">Jhonatan Henrique Favoreto</h2>
+                <ul class="profile-buttons">
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
 
-<body>
-    
-</body>
+                <div class="separator" aria-hidden="true"></div>
+
+                <p class="about">
+                    Olá! Sou <strong>Jhonatan Henrique Favoreto</strong>, um desenvolvedor apaixonado por tecnologia e inovação. 
+                    Tenho experiência em <strong>JavaScript, HTML e CSS</strong>, e adoro criar aplicações web interativas e responsivas. 
+                    Meu foco está em consumir APIs, desenvolver interfaces modernas e sempre buscar aprender novas tecnologias. 
+                    Estou constantemente explorando o universo do desenvolvimento front-end e buscando desafios que me façam crescer como profissional.
+                </p>
+            </div>
+        </div>
+
+        <main>
+            <section id="sobre">
+                <h3 id="titulo-sobre">Sobre Mim</h3>
+                <p>Sou um desenvolvedor apaixonado por tecnologia e inovação.</p>
+            </section>
+        </main>
+    </body>
 </html>

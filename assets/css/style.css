@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap");
+
 *{
     margin: 0;
     padding: 0;
@@ -8,4 +11,305 @@ header {
     background-color: black;
     color: white;
     padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 100px;
+    margin: 0 auto;
+}
+
+.dark-mode {
+    background-color: #002897;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    padding: 8px 10px;
+}
+
+body {
+    font-family: relawey, sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+
+li {
+    background-color: #002897;
+    padding: 8px;
+    border-left: 4px solid black;
+    border-radius: 6px;
+    font-size: 16px;
+    min-width: 220px;
+    cursor: pointer;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+li:hover {
+    background-color: #435faa;
+    transform: translateX(5px);
+}
+
+.container img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 16px;
+}
+
+.container::before { display: none; }
+
+.profile-card{
+    background: rgba(255,255,255,0.06);
+    border-radius: 10px;
+    padding: 20px 16px;
+    width: min(92vw, 420px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+.profile-name {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 8px 0 4px 0;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+
+.profile-buttons{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+}
+.profile-buttons li{
+    min-width: auto;
+    flex: 1;
+    border-left: none;
+    background-color: #002897;
+    border-radius: 6px;
+    text-align: center;
+}
+.profile-buttons li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+}
+.profile-buttons li:hover{ background-color: #435faa; transform: translateX(5px); transition: transform .25s ease, background-color .25s ease; }
+
+.profile-name {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 4px 0;
+  color: #000;
+  letter-spacing: 0.5px;
+}
+
+.separator{ width: 80%; height: 2px; background: #000; border-radius: 2px; }
+
+.about{ 
+    text-align: center; 
+    padding: 0 16px 8px 16px; 
+    color: #000;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-weight: 400;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.about strong{
+    font-weight: 700;
+    color: #002897;
+}
+
+/* ========================================
+   RESPONSIVIDADE - MEDIA QUERIES
+   ======================================== */
+
+/* Tablets e telas médias (768px ou menos) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+
+    .dark-mode h2 {
+        font-size: 1.1rem;
+        padding: 15px 8px;
+    }
+
+    .container {
+        padding: 20px 12px;
+    }
+
+    .profile-card {
+        width: min(95vw, 400px);
+        padding: 18px 12px;
+        gap: 10px;
+    }
+
+    .container img {
+        max-width: 160px;
+    }
+
+    .profile-name {
+        font-size: 1.15rem;
+    }
+
+    .profile-buttons {
+        gap: 6px;
+        flex-wrap: wrap; /* permite quebra em telas menores */
+    }
+
+    .profile-buttons li {
+        flex: 1 1 calc(50% - 6px); /* 2 botões por linha */
+        min-width: 100px;
+    }
+
+    .profile-buttons li a {
+        padding: 10px 8px;
+        font-size: 0.9rem;
+    }
+
+    .about {
+        font-size: 0.9rem;
+        padding: 0 12px 8px 12px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    #sobre h3 {
+        font-size: 1.3rem;
+    }
+
+    #sobre p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Smartphones (480px ou menos) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+        padding: 10px 8px;
+    }
+
+    .dark-mode h2 {
+        font-size: 0.95rem;
+        padding: 12px 6px;
+    }
+
+    .container {
+        padding: 15px 8px;
+    }
+
+    .profile-card {
+        width: 96vw;
+        padding: 15px 10px;
+        gap: 8px;
+        border-radius: 8px;
+    }
+
+    .container img {
+        max-width: 130px;
+    }
+
+    .profile-name {
+        font-size: 1rem;
+        margin: 6px 0 2px 0;
+        letter-spacing: 0.3px;
+    }
+
+    .profile-buttons {
+        gap: 6px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .profile-buttons li {
+        flex: 1 1 100%; /* 1 botão por linha */
+        min-width: auto;
+    }
+
+    .profile-buttons li a {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
+
+    .separator {
+        width: 90%;
+    }
+
+    .about {
+        font-size: 0.85rem;
+        line-height: 1.5;
+        padding: 0 10px 6px 10px;
+    }
+
+    main {
+        padding: 12px 10px;
+    }
+
+    #sobre h3 {
+        font-size: 1.2rem;
+    }
+
+    #sobre p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
+
+/* Telas muito pequenas (360px ou menos) */
+@media (max-width: 360px) {
+    .container img {
+        max-width: 110px;
+    }
+
+    .profile-name {
+        font-size: 0.95rem;
+    }
+
+    .profile-buttons li a {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+
+    .about {
+        font-size: 0.8rem;
+    }
 }
